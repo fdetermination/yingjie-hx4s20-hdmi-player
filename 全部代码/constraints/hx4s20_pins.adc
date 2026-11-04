@@ -1,0 +1,20 @@
+# 来源：HX4S20开发板手册-HDL版2410页6/11/18/20/21，2_FPGA与6_EX_DEVICE原理图。
+# LED1..4丝印对应网络LED0..3，高电平点亮；HDMI_B只约束正端，负端由器件差分对规则配置。
+set_pin_assignment {clk_50}       {LOCATION=R7; IOSTANDARD=LVCMOS33; PULLTYPE=NONE;}
+set_pin_assignment {rst_n}        {LOCATION=A2; IOSTANDARD=LVCMOS33; PULLTYPE=NONE;}
+set_pin_assignment {key_next}     {LOCATION=B2; IOSTANDARD=LVCMOS33; PULLTYPE=NONE;}
+set_pin_assignment {key_auto}     {LOCATION=C1; IOSTANDARD=LVCMOS33; PULLTYPE=NONE;}
+set_pin_assignment {sd_cs_n}      {LOCATION=A12; IOSTANDARD=LVCMOS33; DRIVESTRENGTH=8; PULLTYPE=NONE;}
+set_pin_assignment {sd_sclk}      {LOCATION=A14; IOSTANDARD=LVCMOS33; DRIVESTRENGTH=8; PULLTYPE=NONE;}
+set_pin_assignment {sd_mosi}      {LOCATION=A13; IOSTANDARD=LVCMOS33; DRIVESTRENGTH=8; PULLTYPE=NONE;}
+set_pin_assignment {sd_miso}      {LOCATION=B14; IOSTANDARD=LVCMOS33; PULLTYPE=NONE;}
+set_pin_assignment {hdmi_clk_p}   {LOCATION=C3; IOSTANDARD=LVDS33; PULLTYPE=NONE;}
+set_pin_assignment {hdmi_d0_p}    {LOCATION=G5; IOSTANDARD=LVDS33; PULLTYPE=NONE;}
+set_pin_assignment {hdmi_d1_p}    {LOCATION=F1; IOSTANDARD=LVDS33; PULLTYPE=NONE;}
+set_pin_assignment {hdmi_d2_p}    {LOCATION=E1; IOSTANDARD=LVDS33; PULLTYPE=NONE;}
+set_pin_assignment {hdmi_ddc_scl} {LOCATION=P2; IOSTANDARD=LVCMOS33; DRIVESTRENGTH=8; PULLTYPE=PULLUP;}
+set_pin_assignment {hdmi_ddc_sda} {LOCATION=R2; IOSTANDARD=LVCMOS33; DRIVESTRENGTH=8; PULLTYPE=PULLUP;}
+set_pin_assignment {status_led[0]} {LOCATION=A4; IOSTANDARD=LVCMOS33; PULLTYPE=NONE;}
+set_pin_assignment {status_led[1]} {LOCATION=A3; IOSTANDARD=LVCMOS33; PULLTYPE=NONE;}
+set_pin_assignment {status_led[2]} {LOCATION=C10; IOSTANDARD=LVCMOS33; PULLTYPE=NONE;}
+set_pin_assignment {status_led[3]} {LOCATION=B12; IOSTANDARD=LVCMOS33; PULLTYPE=NONE;}
